@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="Moved" d="M20 1.45462e-05C16.3185 1.45462e-05 13.3333 2.9852 13.3333 6.66668V13.3333C13.3333 13.3333 10.3481 13.3333 6.66667 13.3333C2.98519 13.3333 0 16.3185 0 20C0 23.6815 2.98519 26.6667 6.66667 26.6667C10.3481 26.6667 13.3333 26.6667 13.3333 26.6667V33.3333C13.3333 37.0148 16.3185 40 20 40C21.7667 40 23.463 39.2963 24.7148 38.0482L38.0482 24.7148C39.3482 23.4148 40 21.7074 40 20C40 18.2926 39.3482 16.5889 38.0482 15.2852L24.7148 1.95187C23.4667 0.700015 21.7704 -0.00368916 20 1.45462e-05Z" fill="url(#paint0_linear_0_95)"/>
+<defs>
+<linearGradient id="paint0_linear_0_95" x1="19.9846" y1="40" x2="19.9846" y2="-2.438e-06" gradientUnits="userSpaceOnUse">
+<stop stop-color="#40C786"/>
+<stop offset="0.5" stop-color="#4CE39B"/>
+<stop offset="1" stop-color="#8BEFA2"/>
+</linearGradient>
+</defs>
+</svg>

@@ -1,0 +1,3 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" fill="none">
+<path d="M540 0C495 0 405 0 360 0C360 45 360 135 360 180C315 180 270 180 180 180C180 279.5 99.4 360 0 360C0 405 0 540 0 540L270 720C270 720 90 720 0 720C0 810 0 900 0 900L450 1080C450 1080 495 1080 540 1080C585 1080 630 1080 630 1080L1080 900C1080 900 1080 810 1080 720C990 720 810 720 810 720L1080 540C1080 540 1080 405 1080 360C980.6 360 900 279.5 900 180C810 180 765 180 720 180C720 135 720 45 720 0C675 0 585 0 540 0Z" fill="url(#emotion-gradient)" />
+<defs><linearGradient id="emotion-gradient" x1="0.5" y1="1" x2="0.5" y2="0"><stop stop-color="#40C786" /><stop offset="0.5" stop-color="#4CE39B" /><stop offset="1" stop-color="#8BEFA2" /></linearGradient></defs></svg>

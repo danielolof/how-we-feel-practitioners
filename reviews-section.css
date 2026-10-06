@@ -1,0 +1,26 @@
+#app .figma-reviews{padding:240px 24px;background:#000;scroll-margin-top:100px;}
+.figma-reviews-shell{max-width:1210px;margin:auto;}
+.figma-review-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;text-align:center;margin-bottom:120px;}
+.figma-review-stats>div{display:flex;flex-direction:column;gap:20px;}
+.figma-review-stats strong{font-family:var(--font-headline);font-size:80px;line-height:1;font-weight:400;}
+.figma-review-stats span{font-size:12px;line-height:1.25;letter-spacing:1.2px;color:#909090;}
+.figma-reviews-grid{columns:3;column-gap:12px;}
+.figma-review-card{break-inside:avoid;margin-bottom:12px;transition:transform 240ms ease,background-color 240ms ease;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:35px;padding:35px;box-sizing:border-box;background:#151515;border-radius:40px;text-align:center;}
+.figma-review-source{margin:0;color:rgba(255,255,255,.56);font-size:12px;line-height:1.25;letter-spacing:1.2px;text-transform:uppercase;}
+.figma-review-card blockquote{margin:0;font-family:var(--font-headline);font-size:20px;line-height:1.25;color:#fff;}
+.figma-review-card img{width:60px;height:8px;}
+@media(max-width:900px){#app .figma-reviews{padding:140px 24px}.figma-review-stats strong{font-size:64px}.figma-review-card{padding:28px;gap:28px;border-radius:32px}.figma-review-stats{margin-bottom:90px}.figma-review-stats span{font-size:10px;letter-spacing:1px}}
+@media(max-width:600px){#app .figma-reviews{padding:100px 24px}.figma-review-stats{gap:12px;margin-bottom:60px}.figma-review-stats strong{font-size:42px}.figma-review-stats>div{gap:16px}.figma-review-stats span{font-size:9px;letter-spacing:.6px}.figma-reviews-grid{columns:1}.figma-review-card{padding:35px;gap:35px;border-radius:40px}}
+
+.figma-review-stats>div{opacity:0;transform:translateY(30px);transition:opacity 600ms ease,transform 700ms cubic-bezier(.22,1,.36,1);}
+.figma-review-stats>div:nth-child(2){transition-delay:700ms;}
+.figma-review-stats>div:nth-child(3){transition-delay:1400ms;}
+.figma-review-stats.stats-visible>div{opacity:1;transform:translateY(0);}
+@media(prefers-reduced-motion:reduce){.figma-review-stats>div{opacity:1;transform:none;transition:none;}}
+
+#app .figma-reviews-heading{font-family:var(--font-headline);font-size:40px;font-weight:400;line-height:1;text-align:center;margin:0 0 80px;}
+@media(max-width:600px){#app .figma-reviews-heading{font-size:34px;margin-bottom:60px;}}
+
+@media(hover:hover) and (pointer:fine){.figma-review-card:hover{transform:translateY(-4px);background:#202020;}}
+@media(min-width:601px) and (max-width:900px){.figma-reviews-grid{columns:2;}}
+@media(prefers-reduced-motion:reduce){.figma-review-card{transition:none}.figma-review-card:hover{transform:none}}

@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="Playful" d="M20 0C8.95556 0 0 8.95556 0 20L20 40L40 20C40 8.95556 31.0444 0 20 0Z" fill="url(#paint0_linear_0_94)"/>
+<defs>
+<linearGradient id="paint0_linear_0_94" x1="20" y1="40" x2="20" y2="1.22654e-06" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFB218"/>
+<stop offset="0.510417" stop-color="#FFD04B"/>
+<stop offset="1" stop-color="#F8E46D"/>
+</linearGradient>
+</defs>
+</svg>

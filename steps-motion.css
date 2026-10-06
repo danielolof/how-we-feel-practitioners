@@ -1,0 +1,52 @@
+#app .motion-steps{height:500vh;padding:0;background:#000;position:relative;}
+.steps-stage{position:sticky;top:0;height:100svh;width:min(1440px,100%);margin:auto;overflow:hidden;--intro-exit:1;--intro-lift:0px;}
+.steps-intro{position:absolute;inset:0;opacity:var(--intro-exit);transform:translateY(var(--intro-lift));}
+#app .steps-intro h2{position:absolute;top:25.5%;left:50%;width:min(464px,80%);margin:0;text-align:center;font-family:var(--font-headline);font-size:40px;font-weight:400;line-height:1;opacity:0;transform:translate(-50%,-35px);}
+#app .steps-intro p{position:absolute;top:68%;left:50%;width:min(480px,80%);margin:0;color:#909090;text-align:center;font-size:16px;line-height:1.25;opacity:0;transform:translate(-50%,35px);}
+.steps-number{position:absolute;top:50%;font-family:var(--font-headline);font-size:180px;line-height:1;transform:translate(-50%,-50%);opacity:var(--number-opacity,1);}
+.steps-number::after{content:'';}
+.steps-number-1{color:#ffd04b;--enter-delay:120ms;}
+.steps-number-2{color:#4ce39b;--enter-delay:340ms;}
+.steps-number-3{color:#799fff;--enter-delay:560ms;}
+.steps-line{position:absolute;top:50%;width:240px;height:1px;transform:translate(-50%,-50%) rotate(var(--line-rotation,0deg));}
+.steps-line img{display:block;width:240px;height:1px;}
+.steps-line-1{--enter-delay:230ms;}.steps-line-2{--enter-delay:450ms;}
+.steps-number,.steps-line{visibility:hidden;}
+.steps-entered .steps-number,.steps-entered .steps-line{visibility:visible;animation:steps-item-enter 450ms ease both;animation-delay:var(--enter-delay);}
+.steps-entered .steps-intro h2{animation:steps-title-enter 650ms cubic-bezier(.22,1,.36,1) both;}
+.steps-entered .steps-intro p{animation:steps-copy-enter 650ms cubic-bezier(.22,1,.36,1) 700ms both;}
+.steps-panel{position:absolute;inset:0;opacity:0;pointer-events:none;}
+.steps-phone{position:absolute;left:23.2%;top:50%;transform:translateY(-50%);width:27.92%;max-width:402px;height:85.35%;max-height:874px;border-radius:80px;background:#202020;}
+.steps-copy{position:absolute;left:59.44%;top:50%;transform:translateY(-50%);width:25.83%;max-width:372px;}
+#app .steps-copy h3{margin:0 0 40px;font-family:var(--font-headline);font-size:40px;font-weight:400;line-height:1;}
+#app .steps-copy p{margin:0;color:#909090;font-size:16px;line-height:1.25;}
+@keyframes steps-title-enter{to{opacity:1;transform:translate(-50%,0)}}
+@keyframes steps-copy-enter{to{opacity:1;transform:translate(-50%,0)}}
+@keyframes steps-item-enter{from{filter:opacity(0);translate:-20px 0}to{filter:opacity(1);translate:0 0}}
+@media(max-width:900px){.steps-number{font-size:140px}.steps-line{width:160px}.steps-line img{transform:scaleX(.66667);transform-origin:left}#app .steps-copy h3{font-size:32px;margin-bottom:24px}.steps-phone{border-radius:50px}#app .steps-intro h2{font-size:36px}}
+@media(max-width:650px){.steps-number{font-size:86px}.steps-line{width:75px}.steps-line img{transform:scaleX(.3125)}#app .steps-intro h2{font-size:32px;top:24%}#app .steps-intro p{top:66%;font-size:15px}.steps-phone{left:24%;top:38%;width:52%;height:48%;border-radius:36px}.steps-copy{left:24%;top:78%;width:68%;max-width:none}#app .steps-copy h3{font-size:27px;margin-bottom:18px}#app .steps-copy p{font-size:15px}}
+#app .steps-reduced{height:auto;}
+.steps-reduced .steps-stage{position:relative;height:auto;overflow:visible;padding:120px 24px;box-sizing:border-box;}
+.steps-reduced .steps-intro{position:relative;height:500px;opacity:1;transform:none;}
+.steps-reduced .steps-intro h2,.steps-reduced .steps-intro p{animation:none;opacity:1;transform:translateX(-50%);}
+.steps-reduced .steps-number,.steps-reduced .steps-line{display:none;}
+.steps-reduced .steps-panel{position:relative;height:90svh;opacity:1!important;transform:none!important;}
+
+@media(min-width:901px){.steps-line{width:16.667%;max-width:240px}.steps-line img{transform:scaleX(var(--line-scale,1));transform-origin:left}.steps-number{font-size:clamp(140px,12.5vw,180px)}#app .steps-copy h3{font-size:clamp(32px,2.778vw,40px)}}
+
+/* Size the phone placeholders from one dimension to preserve the Figma aspect ratio. */
+.steps-phone{width:min(27.92%,39.25svh,402px);height:auto;max-height:none;aspect-ratio:402 / 874;border-radius:20% / 9.2%;}
+@media(max-width:650px){.steps-phone{width:min(52%,22.08svh,402px);height:auto;}}
+
+.steps-reduced .steps-copy,.steps-reduced .steps-phone{translate:none!important;}
+
+/* Unpinned sections move with native document scrolling. */
+#app .motion-steps{height:auto;}
+.steps-stage{position:relative;height:400svh;overflow:hidden;}
+.steps-intro{height:100svh;bottom:auto;}
+.steps-panel{inset:auto 0;height:100svh;opacity:1;}
+.steps-panel:nth-of-type(1){top:100svh;}
+.steps-panel:nth-of-type(2){top:200svh;}
+.steps-panel:nth-of-type(3){top:300svh;}
+.steps-reduced .steps-stage{height:auto;}
+.steps-reduced .steps-panel{top:auto;}

@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="Nervous" d="M10 0L0 20L20 40L40 20L30 0H10Z" fill="url(#paint0_linear_0_101)"/>
+<defs>
+<linearGradient id="paint0_linear_0_101" x1="20" y1="40" x2="20" y2="7.56219e-07" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F43760"/>
+<stop offset="0.510417" stop-color="#FF4C40"/>
+<stop offset="1" stop-color="#FF813F"/>
+</linearGradient>
+</defs>
+</svg>
